@@ -11,15 +11,27 @@
   </head>
   
 <body data-gr-c-s-loaded="true">
-    <!-- First problem: move right -->
+<body onload="resetimages()">
+    <!-- the actual inputing and distributing of user input -->
 <div>
 Test to make sure the computer reads arrow keys
 </div>
-    <input type="text" oninput="Moveright(this.value)" size="3">
-    <p id ="form">
-    
-    </p>
-    
-  
+    <input type="text" oninput="Move(this.value)" size="3">
+    <div>
+         <p onclick="sendData()">Run WebSocket</p>
+      </div>
 
+    <p id ="form">
+
+    </p>
+    <!--Displays buttons on the screen -->
+    <img id="up" src="up.png" alt="Up arrow" style="width:100px;height:100px;">
+    <img id="left" src="left.png" alt="left arrow" style="width:100px;height:100px;">
+    <img id="right" src="right.png" alt="right arrow" style="width:100px;height:100px;">
+    <img id="down" src="down.png" alt="down arrow" style="width:100px;height:100px;">
+    <img id="W" src="w.jpg" alt="Up arrow" style="width:100px;height:100px;">
+    <img id="A" src="a.jpg" alt="left arrow" style="width:100px;height:100px;">
+    <img id="D" src="d.jpg" alt="right arrow" style="width:100px;height:100px;">
+    <img id="S" src="s.jpg" alt="down arrow" style="width:100px;height:100px;">
+  </input>
 </body></html>
