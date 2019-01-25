@@ -1,4 +1,4 @@
-function Moveright(e)
+function Move(e)
 {
 document.onkeydown = checkKey;
 
